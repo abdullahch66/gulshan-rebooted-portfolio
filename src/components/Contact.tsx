@@ -76,10 +76,10 @@ const Contact = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <Card className="p-8 glass">
-              <h3 className="text-2xl font-semibold text-primary mb-6">
-                Send Me a Message
+            {/* Enhanced Contact Form */}
+            <Card className="p-8 glass-intense hover-lift hover:shadow-floating transition-all duration-500">
+              <h3 className="text-2xl font-semibold text-primary mb-6 gradient-text">
+                💬 Send Me a Message
               </h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -150,9 +150,9 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
-                  variant="glow" 
+                  variant="shimmer" 
                   size="lg" 
-                  className="w-full"
+                  className="w-full relative overflow-hidden"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
@@ -167,11 +167,11 @@ const Contact = () => {
               </form>
             </Card>
 
-            {/* Contact Information */}
+            {/* Enhanced Contact Information */}
             <div className="space-y-8">
-              <Card className="p-8 glass">
-                <h3 className="text-2xl font-semibold text-primary mb-6">
-                  Let's Connect
+              <Card className="p-8 glass-intense hover-lift hover:shadow-floating transition-all duration-500">
+                <h3 className="text-2xl font-semibold text-primary mb-6 gradient-text">
+                  🤝 Let's Connect
                 </h3>
                 <p className="text-foreground/80 mb-8 leading-relaxed">
                   I'm always excited to work on new projects and collaborate with talented individuals. 
@@ -181,8 +181,8 @@ const Contact = () => {
 
                 <div className="space-y-6">
                   {contactInfo.map((info, index) => (
-                    <div key={index} className="flex items-center space-x-4">
-                      <div className="text-primary p-3 bg-primary/10 rounded-lg">
+                    <div key={index} className="flex items-center space-x-4 group hover-lift transition-all duration-300">
+                      <div className="text-primary p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors duration-300">
                         {info.icon}
                       </div>
                       <div>
@@ -203,9 +203,9 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="p-8 glass">
-                <h4 className="text-lg font-semibold text-primary mb-4">
-                  Response Time
+              <Card className="p-8 glass hover-lift hover:shadow-floating transition-all duration-500">
+                <h4 className="text-lg font-semibold text-primary mb-4 gradient-text">
+                  ⚡ Response Time
                 </h4>
                 <p className="text-foreground/80">
                   I typically respond to messages within 24 hours during weekdays. 
@@ -213,9 +213,9 @@ const Contact = () => {
                 </p>
               </Card>
 
-              <Card className="p-8 glass">
-                <h4 className="text-lg font-semibold text-primary mb-4">
-                  Available For
+              <Card className="p-8 glass hover-lift hover:shadow-floating transition-all duration-500">
+                <h4 className="text-lg font-semibold text-primary mb-4 gradient-text">
+                  🎯 Available For
                 </h4>
                 <ul className="text-foreground/80 space-y-2">
                   <li>• Full-stack web development projects</li>

@@ -79,20 +79,21 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Featured Project */}
+          {/* Featured Project with enhanced effects */}
           {featuredProject && (
             <div className="mb-16">
-              <Card className="overflow-hidden glass hover:shadow-card transition-all duration-300">
+              <Card className="overflow-hidden glass-intense hover:shadow-floating hover-lift transition-all duration-500">
                 <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden group">
                     <img 
                       src={featuredProject.image} 
                       alt={featuredProject.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-tech-blue-light/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute top-4 left-4">
-                      <Badge variant="default" className="bg-primary/90 text-primary-foreground">
-                        Featured
+                      <Badge variant="default" className="bg-gradient-to-r from-primary to-tech-blue-light text-primary-foreground shadow-glow animate-glow-pulse">
+                        ⭐ Featured
                       </Badge>
                     </div>
                   </div>
@@ -132,23 +133,23 @@ const Projects = () => {
             </div>
           )}
 
-          {/* Other Projects Grid */}
+          {/* Enhanced Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden glass hover:shadow-card transition-all duration-300 group">
+              <Card key={index} className="overflow-hidden glass hover-lift hover:shadow-floating transition-all duration-500 group">
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button variant="glow" size="sm" asChild>
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center space-x-4">
+                    <Button variant="glow" size="sm" className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink size={14} />
                       </a>
                     </Button>
-                    <Button variant="outline" size="sm" asChild>
+                    <Button variant="outline" size="sm" className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75" asChild>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github size={14} />
                       </a>

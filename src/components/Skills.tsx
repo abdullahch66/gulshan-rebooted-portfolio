@@ -52,33 +52,36 @@ const Skills = () => {
             </p>
           </div>
 
-          {/* Skills Grid */}
+          {/* Enhanced Skills Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {skillCategories.map((category, categoryIndex) => (
-              <Card key={categoryIndex} className="p-6 glass hover:shadow-card transition-all duration-300">
-                <h3 className="text-xl font-semibold text-primary mb-6 text-center">
+              <Card key={categoryIndex} className="p-6 glass-intense hover-lift hover:shadow-floating transition-all duration-500">
+                <h3 className="text-xl font-semibold text-primary mb-6 text-center gradient-text">
                   {category.title}
                 </h3>
                 
                 <div className="space-y-6">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2">
+                    <div key={skillIndex} className="space-y-3 group">
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-2">
-                          <span className="text-lg">{skill.icon}</span>
-                          <span className="font-medium">{skill.name}</span>
+                        <div className="flex items-center space-x-3">
+                          <span className="text-xl group-hover:animate-bounce">{skill.icon}</span>
+                          <span className="font-medium group-hover:text-primary transition-colors duration-300">{skill.name}</span>
                         </div>
-                        <span className="text-sm text-foreground/60">{skill.level}%</span>
+                        <span className="text-sm text-foreground/60 font-mono">{skill.level}%</span>
                       </div>
                       <div className="relative">
-                        <Progress 
-                          value={skill.level} 
-                          className="h-2 bg-muted"
-                        />
-                        <div 
-                          className="absolute top-0 left-0 h-2 bg-gradient-to-r from-primary to-tech-blue-light rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${skill.level}%` }}
-                        />
+                        <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
+                          <div 
+                            className="h-full bg-gradient-to-r from-primary via-tech-blue-light to-primary bg-[length:200%_100%] rounded-full transition-all duration-1000 ease-out animate-shimmer relative"
+                            style={{ 
+                              width: `${skill.level}%`,
+                              animationDelay: `${skillIndex * 0.1}s`
+                            }}
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -87,11 +90,11 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Additional Info */}
+          {/* Enhanced Additional Info */}
           <div className="mt-16 text-center">
-            <Card className="p-8 glass max-w-4xl mx-auto">
-              <h3 className="text-2xl font-semibold text-primary mb-4">
-                Always Learning
+            <Card className="p-8 glass-intense max-w-4xl mx-auto hover-lift hover:shadow-floating transition-all duration-500">
+              <h3 className="text-2xl font-semibold text-primary mb-4 gradient-text">
+                🚀 Always Learning
               </h3>
               <p className="text-foreground/80 leading-relaxed">
                 The tech world is constantly evolving, and I'm passionate about staying current with the latest trends 

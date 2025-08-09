@@ -18,6 +18,7 @@ const buttonVariants = cva(
         hero: "bg-gradient-to-r from-primary to-tech-blue-light text-primary-foreground hover:shadow-glow hover:scale-105 transform transition-all duration-300",
         glass: "glass backdrop-blur-md border border-primary/20 text-foreground hover:border-primary/40 hover:bg-primary/10",
         glow: "bg-primary text-primary-foreground shadow-glow hover:shadow-[0_0_40px_hsl(var(--tech-blue)/0.4)] hover:scale-105 transform",
+        shimmer: "relative bg-gradient-to-r from-primary via-tech-blue-light to-primary bg-[length:200%_100%] text-primary-foreground animate-shimmer hover:shadow-glow transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
