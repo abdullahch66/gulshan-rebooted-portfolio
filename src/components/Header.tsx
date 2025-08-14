@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-xl font-bold text-primary">
-            <span className="text-glow">Gulshan</span>
+            <span className="text-glow">muhammmad abdullah</span>
           </div>
 
           {/* Desktop Navigation */}

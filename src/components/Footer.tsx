@@ -38,7 +38,7 @@ const Footer = () => {
             {/* Brand & Description */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary text-glow">
-                Gulshan
+                muhammmad abdullah
               </h3>
               <p className="text-foreground/70 leading-relaxed">
                 Full Stack Developer passionate about creating exceptional digital experiences 
@@ -110,7 +110,7 @@ const Footer = () => {
           <div className="border-t border-primary/10 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-foreground/60 text-sm">
-                © {currentYear} Gulshan (Abdullah Sajjad). All rights reserved.
+                © {currentYear} muhammmad abdullah. All rights reserved.
               </p>
               
               <div className="flex items-center space-x-2 text-foreground/60 text-sm">
