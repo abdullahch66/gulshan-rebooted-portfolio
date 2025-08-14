@@ -43,7 +43,7 @@ const Hero = () => {
         {/* Name with gradient text effect */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
           <span className="gradient-text text-glow-intense animate-shimmer bg-gradient-to-r from-primary via-tech-blue-light to-primary bg-[length:200%_100%]">
-            Muhammad Abdullah
+            Muhammad Abdullh
           </span>
         </h1>
 
