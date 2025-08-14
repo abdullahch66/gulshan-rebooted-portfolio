@@ -43,11 +43,7 @@ const Hero = () => {
         {/* Name with gradient text effect */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
           <span className="gradient-text text-glow-intense animate-shimmer bg-gradient-to-r from-primary via-tech-blue-light to-primary bg-[length:200%_100%]">
-            Gulshan
-          </span>
-          <br />
-          <span className="text-foreground">
-            (Abdullah Sajjad)
+            Muhammad Abdullah
           </span>
         </h1>
 
@@ -78,7 +74,7 @@ const Hero = () => {
         {/* Enhanced Social Links with hover effects */}
         <div className="flex justify-center space-x-6 mb-16 animate-fade-in" style={{animationDelay: '1s'}}>
           <Button variant="ghost" size="icon" className="hover:text-primary hover-lift hover:shadow-glow transition-all duration-300" asChild>
-            <a href="mailto:contact@gulshan.dev" aria-label="Email">
+            <a href="mailto:mabdullah43670@gmail.com" aria-label="Email">
               <Mail size={24} />
             </a>
           </Button>

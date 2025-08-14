@@ -43,14 +43,14 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      value: "contact@gulshan.dev",
-      link: "mailto:contact@gulshan.dev"
+      value: "mabdullah43670@gmail.com",
+      link: "mailto:mabdullah43670@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone",
-      value: "+92 300 1234567",
-      link: "tel:+923001234567"
+      value: "+92 333 0866754",
+      link: "tel:+923330866754"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
